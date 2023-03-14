@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root{
+    --first-color:#181823;
+    --second-color:#537FE7;
+    --third-color:#C0EEF2;
+    --fourth-color:#E9F8F9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+.conteudo {
+    background-color: var(--first-color);
+}
+
+.cabecalho{
+    border-color: var(--third-color);
+    border-style: solid;
+    border-width: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%; 
+    color: var(--fourth-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.conteudo_nome_do_site {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    margin-right: 40%;
+    margin-left: auto;
+}
+
+.imagem_botao{
+    width: 50px;
+    height: 50px;
+}
+
+.conteudo_subtitulo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    color: var(--second-color);
+    padding: 2%;
+}
+
+.conteudo_icones_filmes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.conteudo_icones_filmes_imagens {
+    width: 180px;
+    height: 265px;
+}
+
+.cartazes_dos_filmes {
+    width: 180px;
+    height: 265px;
+    border-radius: 8px;
+}
+
+footer {
+    background-image: url(footer.jpg);
+    background-size: 100% 135%;
+    padding: 25vh 100vh;
+}
+
+.container {
+    width: 180px;
+    height: 265px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: var(--third-color);
+    border-radius: 8px;
+}
+
+.titulo_do_filme{
+    margin-top: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: #181823 solid 1.5px;
+    width: 150px;
+    border-radius: 12px;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.overlay:hover {
+    width: 180px;
+    height: 265px;
+    position: absolute;
+    opacity: 0.9;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.conteudo_subtitulo_produto{
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    color: var(--second-color);
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.conteudo_adicional_imagem{
+    width: 457px;
+    height: 342px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.conteudo_adicional_container{
+    text-align: center;
+    border: var(--second-color) solid 3px;
+    border-radius: 20px;
+    font-family:'Pacifico', cursive ;
+    font-size: 36px;
+    color: var(--third-color);
+    margin-bottom: 10%;
+}
+
+.conteudo_adicional{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.conteudo_adicional_container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 1s;
+}
