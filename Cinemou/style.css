@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-:root{
-    --first-color:#181823;
-    --second-color:#537FE7;
-    --third-color:#C0EEF2;
-    --fourth-color:#E9F8F9;
+:root {
+    --first-color: #181823;
+    --second-color: #537FE7;
+    --third-color: #C0EEF2;
+    --fourth-color: #E9F8F9;
 }
 
 * {
@@ -18,30 +18,51 @@
     background-color: var(--first-color);
 }
 
-.cabecalho{
+.cabecalho {
     border-color: var(--third-color);
     border-style: solid;
     border-width: 3px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    padding: 2%; 
+    padding: 2%;
     color: var(--fourth-color);
     display: flex;
     justify-content: flex-end;
 }
 
+.botoes {
+    display: flex;
+}
+
 .conteudo_nome_do_site {
+    display: inline-block;
     font-family: 'Pacifico', cursive;
     font-size: 60px;
-    margin-right: 40%;
+    margin-right: 33.8%;
     margin-left: auto;
 }
 
-.imagem_botao{
+.imagem_botao {
     width: 50px;
     height: 50px;
+    padding-right: 10%;
+}
+
+.botao_login {
+    display: flex;
+    align-items: center;
+    font-family: 'Lora', serif;
+    font: 20px;
+    margin-right: 10%;
+}
+
+.botao_pesquisa {
+    display: flex;
+    align-items: center;
+    font-family: 'Lora', serif;
+    font: 20px;
 }
 
 .conteudo_subtitulo {
@@ -95,7 +116,7 @@ footer {
     border-radius: 8px;
 }
 
-.titulo_do_filme{
+.titulo_do_filme {
     margin-top: 65%;
     display: flex;
     justify-content: center;
@@ -120,7 +141,7 @@ footer {
     cursor: pointer;
 }
 
-.conteudo_subtitulo_produto{
+.conteudo_subtitulo_produto {
     font-family: 'Pacifico', cursive;
     font-size: 48px;
     color: var(--second-color);
@@ -128,30 +149,30 @@ footer {
     padding-bottom: 4%;
 }
 
-.conteudo_adicional_imagem{
+.conteudo_adicional_imagem {
     width: 457px;
     height: 342px;
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.conteudo_adicional_container{
+.conteudo_adicional_container {
     text-align: center;
     border: var(--second-color) solid 3px;
     border-radius: 20px;
-    font-family:'Pacifico', cursive ;
+    font-family: 'Pacifico', cursive;
     font-size: 36px;
     color: var(--third-color);
     margin-bottom: 10%;
 }
 
-.conteudo_adicional{
+.conteudo_adicional {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.conteudo_adicional_container:hover{
+.conteudo_adicional_container:hover {
     transform: scale(1.1);
     cursor: pointer;
     transition: 1s;
